@@ -1,2 +1,1 @@
-# dotnetConf
-Hyderabad dotnetConf 2016
+# Hyderabad dotnetConf 2016
