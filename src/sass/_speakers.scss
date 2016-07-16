@@ -1,20 +1,28 @@
 #speakers {
   background-color: #1A1A1A;
+  margin-top: 0;
+
   .title {
+    margin-top: 1.5em;
     color: #ffffff;
   }
+
   .content {
     color: #ffffff;
     overflow: hidden;
+
     .speakers-list {
+
       list-style-type: none;
       padding: 0;
       margin: 0;
+
       .speaker {
         float: left;
         width: 70%;
         margin: 0 15% 30px;
         text-align: center;
+
         a {
           text-decoration: none;
           height: auto;
@@ -31,6 +39,7 @@
             color: #ffffff;
           }
         }
+
         .avatar {
           margin: 0 auto 10px;
           height: 100%;
@@ -43,6 +52,7 @@
           background: transparent;
           overflow: hidden;
           cursor: pointer;
+
           img {
             border-radius: 50%;
             display: block;
@@ -56,6 +66,7 @@
             cursor: pointer;
           }
         }
+
         .name {
           font-size: 15px;
           line-height: 20px;
@@ -64,6 +75,7 @@
           color: #ffffff;
           margin: 0 0 10px;
         }
+
         .company {
           font-size: 12px;
           line-height: 17px;
@@ -72,14 +84,14 @@
           padding: 0;
           margin: 0;
         }
+
         .role {
           font-size: 12px;
           line-height: 17px;
           font-weight: 400;
           color: #ffffff;
           padding: 0;
-          margin: 0;
-          margin-bottom: 10px;
+          margin: 0 0 10px;
         }
       }
     }
@@ -133,49 +145,5 @@
     &:nth-child(4n-1) {
       margin-right: 6%;
     }
-  }
-}
-
-
-.spk-list {
-  width: 90%;
-  margin: 10px auto;
-  text-align: center;
-  ul {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 0;
-    list-style: none;
-    margin-left: -5px;
-    line-height: 1;
-    margin-bottom: 15px;
-    text-align: center;
-    li {
-      padding: 3px 5px;
-      margin: 3px 5px;
-      position: relative;
-      display: inline-block;
-      a {
-        color: #0994d9 !important;
-        text-decoration: none;
-        background: transparent;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .spk-list {
-    width: 500px;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .spk-list {
-    width: 700px;
   }
 }
