@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "4.4.1"
+branches:
+  only:
+    - master
+before_install:
+  - npm install -g gulp
+install:
+  - npm install
+script: gulp build
+after_success: |
+  if [ -n "$GITHUB_API_KEY" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+    git config --global user.email "shravan.kasagoni@outlook.com"
+    git config --global user.name "Shravan Kumar kasagoni"
+    git clone https://themugh:$GITHUB_API_KEY@github.com/themugh/dotnetConf.git deploy-web
+    cd deploy-web
+    git checkout gh-pages
+    git rm -rf .
+    mkdir 2016
+    cd ../dist
+    cp -f -r . ../deploy-web/2016
+    cd ../deploy-web
+    git add .
+    git commit -a -m "deploy"
+    # git remote add origin https://themugh:$GITHUB_API_KEY@github.com/themugh/dotnetConf.git
+    git push -u origin gh-pages
+    cd "$TRAVIS_BUILD_DIR"
+  fi
