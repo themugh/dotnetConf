@@ -3,9 +3,11 @@
 import gulp from 'gulp';
 import del from 'del';
 import sass from 'gulp-sass';
+import jsonData from 'gulp-data';
 import pug from 'gulp-pug';
 import browser_Sync from 'browser-sync';
 import runSequence from 'run-sequence';
+var fs = require('fs');
 
 var browserSync = browser_Sync.create();
 
@@ -19,8 +21,7 @@ const paths = {
         dest: 'dist/assets/css/'
     },
     pug: {
-        index: 'src/index.pug',
-        src: 'src/**/*.pug',
+        src: 'src/*.pug',
         dest: 'dist/'
     },
     images: {
@@ -42,7 +43,10 @@ gulp.task('sass', () => {
 });
 
 gulp.task('pug', () => {
-    return gulp.src(paths.pug.index)
+    return gulp.src(paths.pug.src)
+        .pipe(jsonData(function (file) {
+            return JSON.parse(fs.readFileSync('./src/data/speakers.json'));
+        }))
         .pipe(pug({pretty: true}))
         .pipe(gulp.dest(paths.pug.dest))
         .pipe(browserSync.stream());
@@ -74,6 +78,8 @@ gulp.task('serve', () => {
 gulp.task('watch', () => {
     gulp.watch(paths.styles.src, ['sass']);
     gulp.watch(paths.pug.src, ['pug']);
+    gulp.watch('src/**/*.pug', ['pug']);
+    gulp.watch('src/data/*.json', ['pug']);
 });
 
 gulp.task('build', () => {

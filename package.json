@@ -21,6 +21,7 @@
     "browser-sync": "^2.13.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^2.3.2",
     "run-sequence": "^1.2.2"

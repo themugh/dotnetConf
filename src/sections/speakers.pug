@@ -8,46 +8,14 @@ section(id='speakers', class='container-fluid')
                             | Speakers
                         div.content
                             ul.speakers-list
-                                li.speaker
-                                    a(href='speakers.html#abhijitjana', target='_self')
-                                        .avatar
-                                            img(alt='Abhijit Jana', src='assets/img/abhijitjana.jpg')
-                                        p.name
-                                            | Abhijit Jana
-                                        p.role
-                                            | Consultant
-                                        p.company
-                                            | Microsoft
-
-                                li.speaker
-                                    a(href='speakers.html#pranav', target='_self')
-                                        .avatar
-                                            img(alt='Pranav Ainavolu', src='assets/img/pranav.jpg')
-                                        p.name
-                                            | Pranav Ainavolu
-                                        p.role
-                                            | Senior Developer
-                                        p.company
-                                            | RealPage
-
-                                li.speaker
-                                    a(href='speakers.html#shravan', target='_self')
-                                        .avatar
-                                            img(alt='Shravan Kumar Kasagoni', src='assets/img/shravan.jpg')
-                                        p.name
-                                            | Shravan Kumar Kasagoni
-                                        p.role
-                                            | Senior Developer
-                                        p.company
-                                            | RealPage
-
-                                li.speaker
-                                    a(href='speakers.html#subhendu', target='_self')
-                                        .avatar
-                                            img(alt='Subhendu De', src='assets/img/subhendu.jpg')
-                                        p.name
-                                            | Subhendu De
-                                        p.role
-                                            | Consultant
-                                        p.company
-                                            | Microsoft
+                                each speaker in SpeakersList
+                                    li.speaker
+                                        a(href='speakers.html#' + speaker.id, target='_self')
+                                            .avatar
+                                                img(alt=speaker.name, src='assets/img/' + speaker.photo)
+                                            p.name
+                                                | #{speaker.name}
+                                            p.role
+                                                | #{speaker.role}
+                                            p.company
+                                                | #{speaker.company}

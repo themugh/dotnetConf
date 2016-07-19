@@ -1,8 +1,16 @@
-
 .spk-list {
   width: 90%;
   margin: 10px auto;
   text-align: center;
+
+  @media only screen and (min-width: 600px) {
+    width: 500px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    width: 700px;
+  }
+
   ul {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -13,11 +21,13 @@
     line-height: 1;
     margin-bottom: 15px;
     text-align: center;
+
     li {
       padding: 3px 5px;
       margin: 3px 5px;
       position: relative;
       display: inline-block;
+
       a {
         color: #0994d9 !important;
         text-decoration: none;
@@ -30,31 +40,35 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .spk-list {
-    width: 500px;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .spk-list {
-    width: 700px;
-  }
-}
-
 #speaker-profiles {
+
   padding-bottom: 16px;
   background-color: #FFFFFF;
-  .speaker {
+
+  .speaker-profile {
     min-height: 100px;
     overflow: hidden;
     border-top: solid 1px #eeeeee;
     padding: 15px 0 10px 0;
-    .speaker-col1 {
+
+    @media only screen and (min-width: 768px) {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .col1 {
       padding: 10px;
       width: 100%;
       height: auto;
       overflow: hidden;
+
+      @media only screen and (min-width: 768px) {
+        padding: 0;
+        width: 25%;
+        float: right;
+      }
+
       img.avatar {
         display: block;
         max-width: 200px;
@@ -64,14 +78,29 @@
         border: 4px solid #fff;
         margin-left: auto;
         margin-right: auto;
+
+        @media only screen and (min-width: 768px) {
+          width: 90%;
+          height: auto;
+          float: right;
+          margin: 0;
+          border-radius: 0;
+        }
       }
     }
-    .speaker-col2 {
+
+    .col2 {
       padding: 0 10px;
       width: 100%;
       height: auto;
       overflow: hidden;
       color: #464446;
+
+      @media only screen and (min-width: 768px) {
+        width: 74%;
+        float: left;
+      }
+
       .name {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 28px;
@@ -79,7 +108,12 @@
         line-height: 40px;
         margin: 0 0 10px 0;
         text-align: center;
+
+        @media only screen and (min-width: 768px) {
+          text-align: left;
+        }
       }
+
       .role {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 18px;
@@ -87,7 +121,12 @@
         line-height: 20px;
         margin: 0 0 10px 0;
         text-align: center;
+
+        @media only screen and (min-width: 768px) {
+          text-align: left;
+        }
       }
+
       .profile {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
@@ -95,6 +134,7 @@
         margin: 0 0 10px 0;
         text-align: justify;
       }
+
       .social {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
@@ -102,6 +142,12 @@
         height: 40px;
         line-height: 40px;
         color: #55acee;
+
+        @media only screen and (min-width: 768px) {
+          padding-left: 20px;
+          text-align: left;
+        }
+
         a {
           position: relative;
           color: #55acee;
@@ -112,6 +158,7 @@
           line-height: 150%;
           height: auto;
         }
+
         .twitter:before {
           content: "\f099";
           font-family: 'FontAwesome', serif;
@@ -124,57 +171,5 @@
         }
       }
     }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col1 {
-    padding: 0;
-    width: 25%;
-    float: right;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col1 img.avatar {
-    width: 90%;
-    height: auto;
-    float: right;
-    margin: 0;
-    border-radius: 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col2 {
-    width: 74%;
-    float: left;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col2 .name {
-    text-align: left;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col2 .role {
-    text-align: left;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #speaker-profiles .speaker .speaker-col2 .social {
-    padding-left: 20px;
-    text-align: left;
   }
 }
