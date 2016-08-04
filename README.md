@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/themugh/dotnetConf.svg?branch=master)](https://travis-ci.org/themugh/dotnetConf)
+
 # Hyderabad dotnetConf 2016
 
 Microsoft User Group Hyderabad presents Hyderabad dotnetConf 2016. Immerse yourself in the world of .NET. Hyderabad dotnetConf 2016 featuring speakers from the Microsoft Most Valuable Professionals, .NET Community and Microsoft. Mark your calendar on August 27th.
