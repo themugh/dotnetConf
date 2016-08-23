@@ -11,6 +11,9 @@
                         | #{speaker.role} at #{speaker.company}
                     p.profile !{speaker.profile}
                     p.social
+                      if speaker.twitter!=""
                         a.twitter(href='http://twitter.com/'+speaker.twitter target='_blank') #{speaker.twitter}
-                        | , 
+                      if speaker.twitter!="" && speaker.blog!=""
+                        |, 
+                      if speaker.blog!=""
                         a(href='http://'+speaker.blog, target='_blank') #{speaker.blog}

@@ -11,6 +11,36 @@
       "photo": "abhijitjana.jpg"
     },
     {
+      "id": "abhilash",
+      "name": "Abhilash Urmaliya",
+      "role": "Developer Consultant",
+      "company": "Microsoft",
+      "profile": "Tech Consultant by profession, working with the Device Applications Development; writer/blogger and avid reader by passion.",
+      "twitter": "urmaliyaabhi",
+      "blog": "myrhymingthought.blogspot.in",
+      "photo": "abhilash.jpg"
+    },
+    {
+      "id": "arun",
+      "name": "Arun Kumar Surya Prakash",
+      "role": "Associate Consultant",
+      "company": "Microsoft",
+      "profile": "Arun Kumar Surya Prakash is a Developer Consultant at Microsoft. He is a Microsoft Certified Solution Developer for Store App Development, and an Azure Solution Developer. <br/><br/> His core skills are developing Windows Store App and Cross Platform App development using Xamarin.",
+      "twitter": "arunnov04",
+      "blog": "",
+      "photo": "arun.jpg"
+    },
+    {
+      "id": "charul",
+      "name": "Charul Pant",
+      "role": "Associate Consultant",
+      "company": "Microsoft",
+      "profile": "Charul Pant is an Associate Consultant at Microsoft Services Global Delivery. She is a part of the Modern Apps domain and is fascinated by Internet of Things. She is an avid writer as well and blogs frequently on social issues.<br/><br/> She aims at creating products and services where technology can be used to solve social problems.",
+      "twitter": "mughtwits",
+      "blog": "charulpant.blogspot.in",
+      "photo": "charul.jpg"
+    },
+    {
       "id": "krishna",
       "name": "Krishna Chaitanya",
       "role": "Security Consultant",
@@ -36,7 +66,7 @@
       "role": "Senior Engineer",
       "company": "Innominds",
       "profile": "Rabi Kiran (a.k.a Ravi) is a developer, blogger, author, speaker and a meetup organizer. He works as a Senior Engineer at Innominds. He puts his thoughts on technology on his blog, regularly writes for DotNetCurry magazine and for SitePoint. He is an organizer and a frequent speaker at the ngHyderabad meetup group. He works on and plays a lot with the modern front-end JavaScript frameworks. He equally enjoys exploring the latest happenings in the .NET world.<br><br> Ravi has been awarded with the Microsoft MVP award for last two years in the category of Visual Studio and Development. He is also a DZone MVB and a SitePoint ambassador.",
-      "twitter": "techieshravan",
+      "twitter": "sravi_kiran",
       "blog": "sravi-kiran.blogspot.in",
       "photo": "ravikiran.png"
     },
@@ -49,16 +79,6 @@
       "twitter": "techieshravan",
       "blog": "theshravan.net",
       "photo": "shravan.jpg"
-    },
-    {
-      "id": "subhendu",
-      "name": "Subhendu De",
-      "role": "Consultant",
-      "company": "Microsoft",
-      "profile": "Subhendu De is a consultant, developer, speaker, father and blogger with 10+ years of professional experience. He has delivered solutions that range from products to enterprise e-commerce application, Azure and IoT application for worldwide customers. He is also MCP, MCTS, MCPD and ITIL certified.<br/><br/>He is an active member in the .NET community and give technical presentations on Microsoft Azure across different workshops and user groups. He has received C# Corner Most Valuable Professional(MVP) award in 2010 and 2014.",
-      "twitter": "dotnetartisan",
-      "blog": "dotnetartisan.in",
-      "photo": "subhendu.jpg"
     }
   ]
 }
